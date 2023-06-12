@@ -29,25 +29,47 @@
         </li>
         <li :class="{ 'submenu-visible': showComputo2 }" @click="toggleComputo2" tabindex="0" class="nav__computo2">
   Computo 2
-  <ul>
-    <li>
-      <router-link :to="{path: '/computo2/sumario2'}">Sumario de contenidos</router-link>
-    </li>
-    <li>
-      <router-link :to="{path: '/computo2/tareas2'}">Tareas ex-aulas</router-link>
-    </li>
-    <li :class="{ 'submenu-visible': showInvestigaciones }" @click="toggleInvestigaciones" tabindex="0" class="nav__investigaciones submenu-visible">
+          <ul>
+            <li>
+               <router-link :to="{path: '/computo2/sumario2'}">Sumario de contenidos</router-link>
+            </li>
+            <li>
+              <router-link :to="{path: '/computo2/tareas2'}">Tareas ex-aulas</router-link>
+            </li>
+            <li :class="{ 'submenu-visible': showInvestigaciones }" @click="toggleInvestigaciones" tabindex="0" class="nav__investigaciones submenu-visible">
       Investigaciones
-      <ul>
-        <li>
-          <router-link :to="{path: '/computo2/investigaciones2'}">Investigaciones</router-link>
+            <ul>
+              <li>
+                <router-link :to="{path: '/computo2/investigaciones2'}">Investigaciones</router-link>
+              </li>
+            </ul>
+          </li>
+        </ul>
         </li>
-      </ul>
-    </li>
+        <li :class="{ 'submenu-visible': showComputo2 }" @click="toggleComputo2" tabindex="0" class="nav__computo2">
+  Computo 3
+          <ul>
+            <li>
+               <router-link :to="{path: '/computo3/sumario3'}">Sumario de contenidos</router-link>
+            </li>
+            <li>
+              <router-link :to="{path: '/computo3/tareas3'}">Tareas ex-aulas</router-link>
+            </li>
+            <li :class="{ 'submenu-visible': showInvestigaciones }" @click="toggleInvestigaciones" tabindex="0" class="nav__investigaciones submenu-visible">
+      Investigaciones
+            <ul>
+              <li>
+                <router-link :to="{path: '/computo3/investigaciones3'}">Investigaciones</router-link>
+              </li>
+            </ul>
+          </li>
+          <li :class="{ 'submenu-visible': showComputo2 }" @click="toggleComputo2" tabindex="0" class="nav__computo3"></li>
+    
   </ul>
 </li>
 
-      </ul>
+
+      </ul>      
     </nav>
 
     <router-view></router-view>
